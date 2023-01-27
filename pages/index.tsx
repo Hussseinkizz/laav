@@ -5,7 +5,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <section className="_bg-theme-2 flex h-full w-full flex-auto flex-col items-center justify-center rounded-lg shadow-md md:rounded-none">
+    <section className="_bg-theme-2 flex h-full w-full flex-auto flex-col items-center justify-center rounded-lg shadow-md shadow-fuchsia-500 md:rounded-none">
       <div className="flex w-full flex-auto flex-col items-center justify-center gap-4">
         <SwipeCard />
       </div>
