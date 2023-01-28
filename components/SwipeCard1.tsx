@@ -1,38 +1,38 @@
-import { useState } from 'react';
+import { useState } from "react";
 // import TinderCard from 'react-tinder-card';
 
 // ...
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const TinderCard = dynamic(
-  () => {
-    return import('react-tinder-card');
-  },
-  { ssr: false }
-);
+// const TinderCard = dynamic(
+//   () => {
+//     return import('react-tinder-card');
+//   },
+//   { ssr: false }
+// );
 
 type Props = {};
 
 const db = [
   {
-    name: 'Richard Hendricks',
-    url: './img/richard.jpg',
+    name: "Richard Hendricks",
+    url: "./img/richard.jpg",
   },
   {
-    name: 'Erlich Bachman',
-    url: './img/erlich.jpg',
+    name: "Erlich Bachman",
+    url: "./img/erlich.jpg",
   },
   {
-    name: 'Monica Hall',
-    url: './img/monica.jpg',
+    name: "Monica Hall",
+    url: "./img/monica.jpg",
   },
   {
-    name: 'Jared Dunn',
-    url: './img/jared.jpg',
+    name: "Jared Dunn",
+    url: "./img/jared.jpg",
   },
   {
-    name: 'Dinesh Chugtai',
-    url: './img/dinesh.jpg',
+    name: "Dinesh Chugtai",
+    url: "./img/dinesh.jpg",
   },
 ];
 
@@ -41,12 +41,12 @@ const SwipeCard = (props: Props) => {
   const [lastDirection, setLastDirection] = useState();
 
   const swiped = (direction: any, nameToDelete: string) => {
-    console.log('removing: ' + nameToDelete);
+    console.log("removing: " + nameToDelete);
     setLastDirection(direction);
   };
 
   const outOfFrame = (name: string) => {
-    console.log(name + ' left the screen!');
+    console.log(name + " left the screen!");
   };
 
   return (
@@ -61,7 +61,7 @@ const SwipeCard = (props: Props) => {
           rel="stylesheet"
         /> */}
         <h1>React Tinder Card</h1>
-        <div className="cardContainer">
+        {/* <div className="cardContainer">
           {characters.map((character) => (
             <TinderCard
               className="swipe"
@@ -75,7 +75,7 @@ const SwipeCard = (props: Props) => {
               </div>
             </TinderCard>
           ))}
-        </div>
+        </div> */}
         {lastDirection ? (
           <h2 className="infoText">You swiped {lastDirection}</h2>
         ) : (
