@@ -1,44 +1,43 @@
-import ServiceCard from '../components/ServiceCard';
-import card from '@material-tailwind/react/theme/components/card';
-import React from 'react';
-import * as Icons from 'react-icons/io5';
+import ServiceCard from "../components/ServiceCard";
+import React from "react";
+import * as Icons from "react-icons/io5";
 
 const servicesCards = [
   {
-    name: 'buy medicine',
+    name: "buy medicine",
     icon: (
-      <Icons.IoMedkit className="w-10 h-10 text-blue-500 group-hover:text-blue-400" />
+      <Icons.IoMedkit className="h-10 w-10 text-blue-500 group-hover:text-blue-400" />
     ),
-    route: 'services/buy-medicine',
+    route: "services/buy-medicine",
   },
   {
-    name: 'book appointment',
+    name: "book appointment",
     icon: (
-      <Icons.IoCalendar className="w-10 h-10 text-blue-500 group-hover:text-blue-400" />
+      <Icons.IoCalendar className="h-10 w-10 text-blue-500 group-hover:text-blue-400" />
     ),
-    route: 'services/book-appointment',
+    route: "services/book-appointment",
   },
   {
-    name: 'lab test',
+    name: "lab test",
     icon: (
-      <Icons.IoBeaker className="w-10 h-10 text-blue-500 group-hover:text-blue-400" />
+      <Icons.IoBeaker className="h-10 w-10 text-blue-500 group-hover:text-blue-400" />
     ),
-    route: 'services/lab-test',
+    route: "services/lab-test",
   },
   {
-    name: 'contact professional',
+    name: "contact professional",
     icon: (
-      <Icons.IoCall className="w-10 h-10 text-blue-500 group-hover:text-blue-400" />
+      <Icons.IoCall className="h-10 w-10 text-blue-500 group-hover:text-blue-400" />
     ),
-    route: 'services/contact-professional',
+    route: "services/contact-professional",
   },
 ];
 
 const services = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-4">
+    <section className="flex w-full flex-col items-center justify-center gap-4">
       <h1 className="text-xl font-bold">What would you like to do?</h1>
-      <div className="w-full grid grid-cols-2 md:grid-cols-4 place-items-center gap-4">
+      <div className="grid w-full grid-cols-2 place-items-center gap-4 md:grid-cols-4">
         {servicesCards.map((card) => (
           <ServiceCard
             key={card.name}
