@@ -16,7 +16,7 @@ const BottomBar = (props: Props) => {
     setStore({ type: "TOGGLE_THEME" });
   };
   return (
-    <nav className="_bg-theme z-10 flex w-full items-center justify-between gap-4 py-2 px-4 shadow-lg">
+    <nav className="_bg-theme flex w-full items-center justify-between gap-4 py-2 px-4 shadow-lg">
       <Link href="/feeds" passHref className="flex">
         <Icons.HiUsers className="_text-theme--hoverable h-6 w-6" />
       </Link>

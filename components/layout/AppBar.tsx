@@ -32,7 +32,7 @@ const AppBar = (props: Props) => {
               src={sampleAvatar}
               alt="foo"
               width={35}
-              height={35}
+              height={3}
               className="w-full rounded-full"
             />
           </Link>
