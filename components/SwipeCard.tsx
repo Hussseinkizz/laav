@@ -41,7 +41,7 @@ const SwipeCard = (props: Props) => {
             </div>
           </div>
           {/* Bottom Overlay */}
-          <div className="flex w-full flex-col items-center justify-end gap-4 bg-opacity-80 bg-gradient-to-t  from-black via-black/60 to-black/5 py-4 px-16 pt-6">
+          <div className="flex w-full flex-col items-center justify-end gap-6 bg-opacity-80 bg-gradient-to-t  from-black via-black/60 to-black/5 py-4 px-16 pt-6">
             <div className="flex w-full  flex-col items-center justify-center gap-2">
               <div className="flex  w-full items-center justify-between gap-4 text-white">
                 {/* Name & Verification */}
