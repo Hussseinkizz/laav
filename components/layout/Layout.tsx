@@ -19,7 +19,7 @@ const Layout = ({ children }: JSXElement) => {
         <title>Laav</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="relative flex h-full min-h-screen w-full flex-auto flex-col items-center justify-between overflow-hidden bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+      <section className="relative flex h-screen w-full flex-auto flex-col items-center justify-between overflow-hidden bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
         {/* The Header */}
         <AppBar />
         {/* The Main View */}
