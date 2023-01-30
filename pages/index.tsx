@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       {/* The Header */}
       <AppBar />
       {/* The Match Screen */}
-      <main className="_bg-theme-2 flex h-full w-full flex-col items-center justify-center py-2">
+      <main className="_bg-theme-2 flex h-full w-full flex-col items-center justify-center py-4">
         <div className="flex h-full w-full flex-col items-center justify-center gap-4">
           <SwipeCard />
         </div>
