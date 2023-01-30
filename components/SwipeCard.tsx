@@ -9,8 +9,8 @@ const SwipeCard = (props: Props) => {
   const [imageIsLoading, setImageIsLoading] = useState(true);
 
   return (
-    <div className="relative flex w-4/5 grow flex-col items-center justify-between overflow-hidden rounded-lg shadow shadow-fuchsia-500 md:w-1/4">
-      <div className="next-image-container group relative flex h-full w-full grow cursor-pointer rounded-lg">
+    <div className="relative flex h-[65vh] w-4/5 flex-col items-center justify-between overflow-hidden rounded-lg shadow shadow-fuchsia-500 md:w-1/4">
+      <div className="next-image-container group relative flex h-full w-full cursor-pointer rounded-lg">
         <Image
           src={sampleAvatar}
           loading="lazy"

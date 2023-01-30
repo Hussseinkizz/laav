@@ -12,12 +12,16 @@ const Home: NextPage = () => {
       <Head>
         <title>Laav</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
       </Head>
       {/* The Header */}
       <AppBar />
       {/* The Match Screen */}
-      <main className="_bg-theme-2 flex h-full w-full flex-auto flex-col items-center justify-center px-8 md:py-8">
-        <div className="flex w-full flex-auto flex-col items-center justify-center gap-4">
+      <main className="_bg-theme-2 flex h-full w-full flex-col items-center justify-center px-2 md:py-8">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-4">
           <SwipeCard />
         </div>
       </main>
