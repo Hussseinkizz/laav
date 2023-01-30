@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import React, { useState } from "react";
 import * as Icons from "react-icons/hi";
 
-import sampleAvatar from "../public/samples/img9.jpeg";
+import sampleAvatar from "../public/samples/img6.jpeg";
 type Props = {};
 
 const SwipeCard = (props: Props) => {
@@ -10,7 +10,7 @@ const SwipeCard = (props: Props) => {
 
   return (
     <div className="flex grow flex-col items-stretch justify-between overflow-hidden rounded-lg">
-      <div className="group relative flex h-[450px] w-full grow cursor-pointer rounded-lg md:my-4">
+      <div className="group relative flex h-[100%] w-full grow cursor-pointer rounded-lg md:my-4">
         <Image
           src={sampleAvatar}
           loading="lazy"
@@ -25,7 +25,7 @@ const SwipeCard = (props: Props) => {
           onLoadingComplete={() => setImageIsLoading(false)}
         />
         {/* The Overlay Content */}
-        <div className="absolute z-10 flex h-full w-full flex-col items-center justify-between">
+        <div className="absolute z-10 flex h-full w-full flex-col items-center justify-between rounded-lg">
           {/* Top Overlay */}
           <div className="flex w-full flex-col items-center justify-start gap-4 p-4 text-sm text-slate-200">
             <div className="flex w-full items-center justify-between gap-4">
@@ -48,10 +48,10 @@ const SwipeCard = (props: Props) => {
                 {/* Name & Verification */}
                 <div className="flex items-center justify-center gap-2">
                   <Icons.HiShieldCheck className="h-6 w-6 text-indigo-500" />
-                  <h1 className="text-2xl font-bold capitalize">Natlie</h1>
+                  <h1 className="text-2xl font-bold capitalize">Natasha</h1>
                 </div>
                 {/* Age */}
-                <h1 className="text-2xl font-semibold"> 23</h1>
+                <h1 className="text-2xl font-semibold"> 24</h1>
               </div>
             </div>
             {/* The Controls */}
