@@ -10,7 +10,7 @@ const SwipeCard = (props: Props) => {
 
   return (
     <div className="flex grow flex-col items-stretch justify-between overflow-hidden rounded-lg">
-      <div className="group relative flex h-[100%] w-full grow cursor-pointer rounded-lg md:my-4">
+      <div className="group relative flex h-[clamp(85%,95%,100%)] w-full grow cursor-pointer rounded-lg md:my-4">
         <Image
           src={sampleAvatar}
           loading="lazy"
@@ -30,14 +30,14 @@ const SwipeCard = (props: Props) => {
           <div className="flex w-full flex-col items-center justify-start gap-4 p-4 text-sm text-slate-200">
             <div className="flex w-full items-center justify-between gap-4">
               {/* Distance */}
-              <div className="flex  w-full items-center justify-center gap-2 md:gap-4">
+              <div className="flex items-center justify-center gap-2 rounded-lg bg-black bg-opacity-10 px-2 py-1 md:gap-4">
                 <Icons.HiMap className="h-6 w-6 text-fuchsia-500" />
                 <h2 className="font-bold capitalize">3 Km Away</h2>
               </div>
               {/* Uptime Status */}
-              <div className="flex  w-full items-center justify-center gap-2 md:gap-4">
+              <div className="flex items-center justify-center gap-2 rounded-lg bg-black bg-opacity-10 px-2 py-1 md:gap-4">
                 <Icons.HiOutlineWifi className="h-6 w-6 text-purple-500" />
-                <h2 className="foo">Active!</h2>
+                <h2 className="text-slate-50">Active!</h2>
               </div>
             </div>
           </div>
