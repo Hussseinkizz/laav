@@ -9,7 +9,7 @@ const SwipeCard = (props: Props) => {
   const [imageIsLoading, setImageIsLoading] = useState(true);
 
   return (
-    <div className="relative flex w-4/5 grow flex-col items-stretch justify-between overflow-hidden rounded-lg shadow shadow-fuchsia-500 md:w-1/4">
+    <div className="relative flex w-4/5 grow flex-col items-center justify-between overflow-hidden rounded-lg shadow shadow-fuchsia-500 md:w-1/4">
       <div className="next-image-container group relative flex h-full w-full grow cursor-pointer rounded-lg">
         <Image
           src={sampleAvatar}
@@ -24,7 +24,7 @@ const SwipeCard = (props: Props) => {
           onLoadingComplete={() => setImageIsLoading(false)}
         />
         {/* The Overlay Content */}
-        <div className="absolute z-10 flex h-full w-full flex-col items-center justify-between rounded-lg">
+        <div className="absolute z-10 flex min-h-full w-full flex-col items-center justify-between rounded-lg">
           {/* Top Overlay */}
           <div className="flex w-full flex-col items-center justify-start gap-4 p-4 text-sm text-slate-200">
             <div className="flex w-full items-center justify-between gap-4">

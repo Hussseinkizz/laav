@@ -8,7 +8,7 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <section className="relative flex h-screen w-full flex-auto flex-col items-center justify-between overflow-hidden bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <section className="relative flex min-h-screen w-full flex-auto flex-col items-center justify-between overflow-hidden bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
       <Head>
         <title>Laav</title>
         <link rel="icon" href="/favicon.ico" />
