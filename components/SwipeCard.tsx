@@ -10,7 +10,7 @@ const SwipeCard = (props: Props) => {
 
   return (
     <div className="flex grow flex-col items-stretch justify-between overflow-hidden rounded-lg">
-      <div className="group relative flex h-[clamp(85%,95%,100%)] w-full grow cursor-pointer rounded-lg md:my-4">
+      <div className="group relative flex h-[clamp(75%,85%,95%)] w-full grow cursor-pointer rounded-lg md:my-4">
         <Image
           src={sampleAvatar}
           loading="lazy"
