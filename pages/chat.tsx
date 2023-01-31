@@ -1,15 +1,22 @@
 // import { Button } from '@material-tailwind/react';
-import React from 'react';
+import ChatBottomBar from "components/ChatBottomBar";
+import ChatTopBar from "components/ChatTopBar";
+import React from "react";
 
 type Props = {};
 
 const chat = (props: Props) => {
   return (
-    <section className="w-full h-full p-2 flex flex-auto flex-col">
-      <h1 className="text-2xl text-center font-bold capitalize">
-        {`Hello React, It's A Match`} 😜
-      </h1>
-      {/* <Button className="mt-4 mx-auto">Swipe Cards...</Button> */}
+    <section className="relative flex min-h-screen w-full flex-auto flex-col items-center justify-between overflow-hidden bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+      <ChatTopBar />
+      {/* The Chat */}
+      <main className="flex h-full w-full flex-auto flex-col items-center justify-center py-4">
+        <div className="flex">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+          suscipit?
+        </div>
+      </main>
+      <ChatBottomBar />
     </section>
   );
 };

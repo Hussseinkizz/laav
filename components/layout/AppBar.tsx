@@ -28,13 +28,15 @@ const AppBar = (props: Props) => {
             passHref
             className="flex items-center justify-center gap-2 rounded-full ring ring-gray-100"
           >
-            <Image
-              src={sampleAvatar}
-              alt="foo"
-              width={35}
-              height={3}
-              className="w-full rounded-full"
-            />
+            <span className="flex h-10 w-10">
+              <Image
+                src={sampleAvatar}
+                alt="foo"
+                width={35}
+                height={3}
+                className="w-full rounded-full"
+              />
+            </span>
           </Link>
           {/* Nav Middle */}
           <Link
